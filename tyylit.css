@@ -1,0 +1,323 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+}
+
+h1, h2, h3 {
+    color: rgb(185, 14, 14);
+    font-family:"Metal Mania", Arial, sans-serif;
+}
+
+h1 {
+    font-size: 80px;
+    text-align:center;
+    color: #ba0e0e;
+    font-family: "Metal Mania", Arial, sans-serif;
+    text-shadow: 3px 3px 0px darkred, 6px 6px 10px black;
+}
+nav {
+    background-color: darkred;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    margin:15px; 
+    padding:10px;
+}
+
+nav a:hover {
+    background-color: red;
+    color:black;
+    box-shadow: 0px 0px 10px red;
+}
+
+.keikka {
+    background-color: #111;
+    border: 2px solid red;
+    padding: 20px;
+    margin: 20px;
+    width: 400px;
+}
+
+.keikka:hover {
+    box-shadow: 0px 0px 15px red;
+}
+
+.keikat {
+    display: flex;
+}
+
+.keikka {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #111;
+    border: 2px solid red;
+
+    padding: 20px;
+    margin: 20px auto;
+
+    max-width: 900px;
+}
+
+.keikka img {
+    width: 250px;
+    height: auto;
+    margin-left: 20px;
+    border: 2px solid red;
+}
+
+.keikka-teksti {
+    flex: 1;
+}
+
+.keikka:hover {
+    box-shadow: 0px 0px 20px red;
+}
+
+@media (max-width: 600px) {
+    .keikka {
+        flex-direction: column;
+        text-align: center;
+    }
+.keikka img {
+    width: 80%;
+    margin: 15px 0 0 0;
+}
+
+}
+
+.keskita {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.keikka {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (min-width: 768px) {
+    .keikka {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+h1 {
+    font-size: 60px;
+}
+
+p {
+    font-size: 18px;
+}
+
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.tilaesittely {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.tilakuvat {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tilakuvat img {
+    width: 100%;
+    height: auto;
+    border: 2px solid red;
+}
+
+.kartta iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .tilakuvat {
+        flex-direction: row;
+    }
+
+    .tilakuvat img {
+        width: 50%;
+    }
+
+    .kartta iframe {
+        height: 400px;
+    }
+
+}
+
+.etusivukuva {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 2px solid red;
+}
+
+@media (min-width: 768px) {
+
+    .etusivukuva {
+        max-width: 900px;
+        display: block;
+        margin: 30px auto;
+    }
+}
+
+
+.historia {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.historiakuva {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+@media (min-width: 768px) {
+    .historia {
+        font-size: 18px;
+    }
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/*aikajanan viiva */
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background: red;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+}
+
+/*yksittäinen tapahtuma*/
+.timeline-item {
+    margin: 20px 0;
+    padding-left: 50px;
+}
+
+/*tapahtumalaatikko */
+.timeline-content {
+    background: #111;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/*vuosiluku*/
+.timeline-content h2 {
+    color: red;
+}
+
+.contact {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.contact a {
+    color: red;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.contact i {
+    color: red;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: red;
+}
+
+/* Keikkalaatikot Flexboxilla*/
+.keikat {
+    display: flex;
+    flex-direction: column; /* tavoitteena mobiilissa päällekkäin*/
+    align-items: center;
+    gap: 20px;
+}
+
+/*yksittäinen keikka*/
+
+.keikka {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111;
+    border: 2px solid red;
+    padding: 15px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+.keikka img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid red;
+}
+
+@media (min-width: 768px) {
+    .keikka {
+        flex-direction: row;
+        max-width: 700px;
+        text-align: left;
+    }
+
+    .keikka img {
+        width: 250px;
+        margin-left: 20px;
+        margin-bottom: 0;
+    }
+}
